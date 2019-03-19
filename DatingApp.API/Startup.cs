@@ -32,8 +32,9 @@ namespace DatingApp.API
                 .AddJsonOptions(opt => {
                     opt.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 });
-            services.AddDbContext<DataContext>(options => options.UseSqlite(Configuration.GetConnectionString("Default"))); 
+            services.AddDbContext<DataContext>(options => options.UseSqlite(Configuration.GetConnectionString("Default")));
             services.AddCors();
+            services.Configure<CloudinarySettings>(Configuration.GetSection("CloudinarySettings"));
             services.AddAutoMapper();
             services.AddTransient<Seed>();
             services.AddScoped<IAuthRepository, AuthRepository>();
