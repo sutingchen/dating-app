@@ -54,7 +54,7 @@ namespace DatingApp.API.Controllers
 
         [HttpPost]
         public async Task<IActionResult> AddPhotoForUser(int userId, 
-            PhotoForCreationDto photoForCreationDto)
+            [FromForm]PhotoForCreationDto photoForCreationDto)
         {
             if(userId != int.Parse(User.FindFirst(ClaimTypes.NameIdentifier).Value))
             {
@@ -67,6 +67,7 @@ namespace DatingApp.API.Controllers
 
             var uploadResult = new ImageUploadResult();
 
+            // TODO: Return BadRequest if file.Length == 0
             if (file.Length > 0)
             {
                 using(var stream = file.OpenReadStream())
