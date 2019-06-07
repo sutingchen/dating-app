@@ -56,10 +56,10 @@ namespace DatingApp.API.Data
                 switch(userParams.OrderBy)
                 {
                     case "created":
-                        users.OrderByDescending(u => u.Created);
+                        users = users.OrderByDescending(u => u.Created);
                         break;
                     default:
-                        users.OrderByDescending(u => u.LastActive);
+                        users = users.OrderByDescending(u => u.LastActive);
                         break;
                 }
             }
