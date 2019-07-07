@@ -8,7 +8,7 @@ Build an app with ASP.NET Core and Angular from scratch
   - ng serve
   - localhost:4200
 
-- DotNet Core: 2.1.3
+- DotNet Core SDK: 2.1.3
   - dotnet build
   - dotnet ef database update
   - dotnet watch run
