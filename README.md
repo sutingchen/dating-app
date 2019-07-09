@@ -4,6 +4,7 @@ Build an app with ASP.NET Core and Angular from scratch
 - npm: 6.7.0
 - Node: 11.10.1
 - Angular CLI: 6.0.8
+  - npm install
   - ng build
   - ng serve
   - localhost:4200
