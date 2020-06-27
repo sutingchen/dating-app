@@ -38,7 +38,6 @@ namespace DatingApp.API.Controllers
             );
 
             //Create a new instance of Cloudinary and pass in the account
-
             _cloudinary = new Cloudinary(account);
         }
 
