@@ -1,5 +1,4 @@
 # dating-app
-Build an app with ASP.NET Core and Angular from scratch
 
 - npm: 6.7.0
 - Node: 11.10.1
