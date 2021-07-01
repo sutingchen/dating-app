@@ -1,5 +1,7 @@
 # dating-app
+Demonstrates CRUD operation (including photo upload) with Angular (frontend) and ASP.NET Core (backend).
 
+## Development Environment
 - npm: 6.7.0
 - Node: 11.10.1
 - Angular CLI: 6.0.8
