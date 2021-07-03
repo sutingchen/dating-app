@@ -1,5 +1,5 @@
 # dating-app
-Demonstrates CRUD operation (including photo upload) with Angular (frontend) and ASP.NET Core (backend).
+A web application that demonstrates CRUD operation (including images) & role-based access control created with Angular (frontend) and ASP.NET Core (backend).
 
 ## Development Environment
 - npm: 6.7.0
